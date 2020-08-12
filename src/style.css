@@ -1,15 +1,4 @@
-@font-face {
-  font-family: 'Poppins';
-  src:
-    url('./fonts/Poppins-Bold.ttf'),
-    format('ttf'),
-    url('./fonts/Poppins-ExtraBold.ttf'),
-    format('ttf'),
-    url('./fonts/Poppins-Light.ttf'),
-    format('ttf'),
-    url('./fonts/Poppins-Medium.ttf'),
-    format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
 body {
   margin: 0;

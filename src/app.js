@@ -12,6 +12,7 @@ const homePageLoad = (content) => {
 
   const divElement = document.createElement('div');
   divElement.innerHTML = '<p>Your home of authentic ghanaian dishes</p>';
+  divElement.classList.add('banner-div';)
   content.appendChild(divElement);
 };
 

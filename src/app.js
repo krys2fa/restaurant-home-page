@@ -2,16 +2,24 @@ import './style.css';
 import { logo, navMenu } from './components/nav';
 import { form } from './components/form';
 
-const homePageLoad = (content) => {
-  document.body.classList.add('home-bg');
+
+const navbar = () => {
   const nav = document.createElement('nav');
   const tabs = navMenu();
 
   nav.classList.add('flex-h');
   nav.appendChild(logo());
   nav.appendChild(tabs);
+  return nav;
+};
 
-  content.appendChild(nav);
+const homePageLoad = (content) => {
+  document.body.classList.remove('home-bg');
+  document.body.classList.add('home-bg');
+
+  content.innerHTML = '';
+
+  content.appendChild(navbar());
 
   const divElement = document.createElement('div');
   divElement.innerHTML = '<p>Your home of authentic ghanaian dishes...</p>';
@@ -26,12 +34,18 @@ const clearPage = (content) => {
   content.removeChild(bannerDiv);
 };
 
+const clearPage2 = (content) => {
+  document.body.classList.remove('home-bg');
+  document.body.classList.add('main-bg');
+  content.innerHTML = '';
+};
 const menuPageLoad = (content) => {
   clearPage(content);
 };
 
 const contactPageLoad = (content) => {
-  clearPage(content);
+  clearPage2(content);
+  content.appendChild(navbar());
   content.appendChild(form());
 };
 

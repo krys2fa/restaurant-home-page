@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Bold.ttf'), format('ttf'),
+       url('./fonts/Poppins-ExtraBold.ttf'), format('ttf'),
+       url('./fonts/Poppins-Light.ttf'), format('ttf'),
+       url('./fonts/Poppins-Medium.ttf'), format('ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./images/banner.jpg');
+  height: 100%;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+

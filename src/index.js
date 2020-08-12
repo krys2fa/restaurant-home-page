@@ -1,19 +1,22 @@
-import {
-  homePageLoad, menuPageLoad, contactPageLoad,
-} from './app';
+import { homePageLoad, contactPageLoad, menuPageLoad } from './app';
 
 const content = document.querySelector('#content');
 
 homePageLoad(content);
 
-const render = (content) => {
-  clickedItem = event.tagert;
+const render = (content, e) => {
+  const clickedItem = e.target.innerHTML;
+  // console.log(e.target.innerHTML);
 
-  if (clickedItem === 'Contact') {
+  if (clickedItem === 'CONTACT US') {
     contactPageLoad(content);
-  } else if (clickedItem === 'Menu') {
+  } else if (clickedItem === 'MENU') {
     menuPageLoad(content);
   } else {
     homePageLoad(content);
   }
 };
+
+document
+  .getElementById('menu-list')
+  .addEventListener('click', (e) => render(content, e));

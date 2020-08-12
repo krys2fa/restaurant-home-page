@@ -11,13 +11,14 @@ const logo = () => {
 
 const navMenu = () => {
   const ulElement = document.createElement('ul');
+  ulElement.setAttribute('id', 'menu-list');
   const homeListElement = document.createElement('li');
   const menuListElement = document.createElement('li');
   const contactListElement = document.createElement('li');
 
-  homeListElement.innerHTML = 'Home';
-  menuListElement.innerHTML = 'Menu';
-  contactListElement.innerHTML = 'Contact Us';
+  homeListElement.innerHTML = 'HOME';
+  menuListElement.innerHTML = 'MENU';
+  contactListElement.innerHTML = 'CONTACT US';
 
   ulElement.classList.add('flex-h');
   ulElement.appendChild(homeListElement);

@@ -12,7 +12,10 @@
     "stylelint-csstree-validator": "1.8.0",
     "stylelint-scss": "3.17.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

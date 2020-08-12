@@ -1,11 +1,19 @@
-import './style.css';
-import { logo, navMenu } from './components/nav';
+import {
+  homePageLoad, menuPageLoad, contactPageLoad,
+} from './app';
 
 const content = document.querySelector('#content');
 
-const nav = document.createElement('nav');
+homePageLoad(content);
 
-nav.appendChild(logo());
-nav.appendChild(navMenu());
+const render = (content) => {
+  clickedItem = event.tagert;
 
-content.appendChild(nav);
+  if (clickedItem === 'Contact') {
+    contactPageLoad(content);
+  } else if (clickedItem === 'Menu') {
+    menuPageLoad(content);
+  } else {
+    homePageLoad(content);
+  }
+};

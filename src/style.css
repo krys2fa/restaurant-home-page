@@ -1,9 +1,14 @@
 @font-face {
   font-family: 'Poppins';
-  src: url('./fonts/Poppins-Bold.ttf'), format('ttf'),
-       url('./fonts/Poppins-ExtraBold.ttf'), format('ttf'),
-       url('./fonts/Poppins-Light.ttf'), format('ttf'),
-       url('./fonts/Poppins-Medium.ttf'), format('ttf');
+  src:
+    url('./fonts/Poppins-Bold.ttf'),
+    format('ttf'),
+    url('./fonts/Poppins-ExtraBold.ttf'),
+    format('ttf'),
+    url('./fonts/Poppins-Light.ttf'),
+    format('ttf'),
+    url('./fonts/Poppins-Medium.ttf'),
+    format('ttf');
 }
 
 body {
@@ -12,12 +17,34 @@ body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   background-image: url('./images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
-.logo {
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
+nav {
+  justify-content: space-between;
 }
 
+nav ul {
+  list-style-type: none;
+  margin-right: 60px;
+}
+
+nav li {
+  color: #fff;
+  font-weight: 500;
+  font-size: 35px;
+  margin: 10px 20px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 10px 40px;
+}
+
+.flex-h {
+  display: flex;
+}

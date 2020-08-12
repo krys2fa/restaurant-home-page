@@ -19,6 +19,7 @@ const navMenu = () => {
   menuListElement.innerHTML = 'Menu';
   contactListElement.innerHTML = 'Contact Us';
 
+  ulElement.classList.add('flex-h');
   ulElement.appendChild(homeListElement);
   ulElement.appendChild(menuListElement);
   ulElement.appendChild(contactListElement);

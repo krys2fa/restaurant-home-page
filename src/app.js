@@ -3,7 +3,6 @@ import { logo, navMenu } from './components/nav';
 import { form } from './components/form';
 import { specials, dishes } from './components/catalogue';
 
-
 const navbar = () => {
   const nav = document.createElement('nav');
   const tabs = navMenu();
@@ -19,8 +18,8 @@ const homePageLoad = (content) => {
   document.body.classList.add('home-bg');
 
   content.innerHTML = '';
-
   content.appendChild(navbar());
+
 
   const divElement = document.createElement('div');
   divElement.innerHTML = '<p>Your home of authentic ghanaian dishes...</p>';

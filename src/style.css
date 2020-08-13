@@ -64,7 +64,7 @@ textarea {
 }
 
 .home-bg {
-  background-image: url('./images/banner.jpg');
+  background: url('./images/banner.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 

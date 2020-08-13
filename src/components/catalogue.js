@@ -1,4 +1,9 @@
-import Banner from '../images/banner.jpg';
+// import Banner from '../images/banner.jpg';
+import Fufu from '../images/fufu.jpg';
+import Banku from '../images/banku.jpg';
+import Jollof from '../images/jollof.jpg';
+import Waakye from '../images/waakye.jpg';
+import Kenkey from '../images/kenkey.jpg';
 
 const imageCreator = (source, cssClass) => {
   const image = new Image();
@@ -7,11 +12,11 @@ const imageCreator = (source, cssClass) => {
   return image;
 };
 
-const dishCreator = (Banner, cssClass, name, price) => {
+const dishCreator = (picture, cssClass, name, price) => {
   const dish = document.createElement('div');
   const dishDetail = document.createElement('div');
 
-  const img = imageCreator(Banner, cssClass);
+  const img = imageCreator(picture, cssClass);
 
   const dishName = document.createElement('h3');
   dishName.innerHTML = name;
@@ -34,9 +39,9 @@ const specials = () => {
   const specialOffer = document.createElement('div');
   specialOffer.innerHTML = '<h3>SPECIAL OFFER</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>';
 
-  const dishOne = dishCreator(Banner, 'logo', 'Banku', 'GHS 15.50');
-  const dishTwo = dishCreator(Banner, 'logo', 'Fufu', 'GHS 25.00');
-  const dishThree = dishCreator(Banner, 'logo', 'Ampesi', 'GHS 12.00');
+  const dishOne = dishCreator(Banku, 'logo', 'Banku', 'GHS 15.50');
+  const dishTwo = dishCreator(Waakye, 'logo', 'Waakye', 'GHS 25.00');
+  const dishThree = dishCreator(Jollof, 'logo', 'Jollof Rice', 'GHS 12.00');
 
   const imgDiv = document.createElement('div');
   imgDiv.classList.add('img-div', 'flex-h');
@@ -60,8 +65,8 @@ const dishes = () => {
 
   itemList.classList.add('flex-h', 'items-list');
 
-  const dishOne = dishCreator(Banner, 'logo', 'Banku', 'GHS 15.50');
-  const dishTwo = dishCreator(Banner, 'logo', 'Fufu', 'GHS 25.00');
+  const dishOne = dishCreator(Kenkey, 'logo', 'Kenkey', 'GHS 15.50');
+  const dishTwo = dishCreator(Fufu, 'logo', 'Fufu', 'GHS 25.00');
 
   itemsOne.appendChild(dishOne);
   itemsTwo.appendChild(dishTwo);

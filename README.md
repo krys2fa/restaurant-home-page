@@ -18,7 +18,7 @@ Requirements can be seen from [The Odin Curriculum](https://www.theodinproject.c
 
 ## Live Demo
 
-Click [here](https://raw.githack.com/krys2fa/js-tic-tac-toe/tic-tac-toe/index.html) to visit a live version of the web app.
+Click [here](https://rawcdn.githack.com/krys2fa/restaurant-home-page/87c99c723be78e7a59a0c382eee8a6707de138ea/dist/index.html) to visit a live version of the web app.
 
 ## Getting Started
 

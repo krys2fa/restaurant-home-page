@@ -161,12 +161,75 @@ textarea {
     height: 80px;
     width: 80px;
   }
+
+  .banner-div {
+    font-size: 55px;
+    font-weight: 500;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-
+  .banner-div {
+    font-size: 52px;
+    font-weight: 600;
+  }
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+  .img-div {
+    justify-content: space-evenly;
+  }
 
+  .dish h3,
+  .dish p,
+  .special-offer h3,
+  .special-offer p {
+    margin: 20px 40px;
+  }
+
+  .banner-div {
+    font-size: 60px;
+  }
+
+  nav li {
+    font-size: 55px;
+  }
+
+  .dish,
+  .special-offer {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .img-div {
+    justify-content: space-evenly;
+  }
+
+  .dish h3,
+  .dish p,
+  .special-offer h3,
+  .special-offer p {
+    margin: 20px 40px;
+  }
+
+  .banner-div {
+    font-size: 100px;
+    font-weight: 800;
+    margin: 500px 100px;
+  }
+
+  nav li {
+    font-size: 100px;
+  }
+
+  .dish,
+  .special-offer {
+    font-size: 40px;
+  }
+
+  .logo {
+    height: 200px;
+    width: 200px;
+  }
 }

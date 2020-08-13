@@ -1,4 +1,3 @@
-// import Banner from '../images/banner.jpg';
 import Fufu from '../images/fufu.jpg';
 import Banku from '../images/banku.jpg';
 import Jollof from '../images/jollof.jpg';

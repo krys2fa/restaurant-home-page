@@ -7,23 +7,6 @@ const imageCreator = (source, cssClass) => {
   return image;
 };
 
-const specials = () => {
-  const specialOffer = document.createElement('div');
-  specialOffer.innerHTML = '<h3>SPECIAL OFFER</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>';
-
-  const imageOne = imageCreator(Banner, 'logo');
-  const imageTwo = imageCreator(Banner, 'logo');
-  const imageThree = imageCreator(Banner, 'logo');
-
-  specialOffer.appendChild(imageOne);
-  specialOffer.appendChild(imageTwo);
-  specialOffer.appendChild(imageThree);
-
-  specialOffer.classList.add('special-offer');
-
-  return specialOffer;
-};
-
 const dishCreator = (Banner, cssClass, name, price) => {
   const dish = document.createElement('div');
   const dishDetail = document.createElement('div');
@@ -47,15 +30,35 @@ const dishCreator = (Banner, cssClass, name, price) => {
   return dish;
 };
 
+const specials = () => {
+  const specialOffer = document.createElement('div');
+  specialOffer.innerHTML = '<h3>SPECIAL OFFER</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>';
+
+  const dishOne = dishCreator(Banner, 'logo', 'Banku', 'GHS 15.50');
+  const dishTwo = dishCreator(Banner, 'logo', 'Fufu', 'GHS 25.00');
+  const dishThree = dishCreator(Banner, 'logo', 'Ampesi', 'GHS 12.00');
+
+  const imgDiv = document.createElement('div');
+  imgDiv.classList.add('img-div', 'flex-h');
+
+  imgDiv.appendChild(dishOne);
+  imgDiv.appendChild(dishTwo);
+  imgDiv.appendChild(dishThree);
+
+  specialOffer.appendChild(imgDiv);
+
+  specialOffer.classList.add('special-offer');
+
+  return specialOffer;
+};
+
 const dishes = () => {
   const items = document.createElement('div');
   const itemList = document.createElement('div');
   const itemsOne = document.createElement('div');
   const itemsTwo = document.createElement('div');
 
-  itemList.classList.add('flex-h', 'space-around');
-  itemsOne.classList.add('row-1');
-  itemsTwo.classList.add('row-2');
+  itemList.classList.add('flex-h', 'items-list');
 
   const dishOne = dishCreator(Banner, 'logo', 'Banku', 'GHS 15.50');
   const dishTwo = dishCreator(Banner, 'logo', 'Fufu', 'GHS 25.00');

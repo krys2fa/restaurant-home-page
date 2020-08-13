@@ -12,7 +12,6 @@ const handleClick = () => {
 
 const render = (content, e) => {
   const clickedItem = e.target.innerHTML;
-  // console.log(e.target.innerHTML);
 
   if (clickedItem === 'CONTACT US') {
     contactPageLoad(content);

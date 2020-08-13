@@ -82,3 +82,17 @@ textarea {
 .flex-h {
   display: flex;
 }
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.dish,
+.special-offer {
+  margin: 40px;
+  color: #fff;
+}

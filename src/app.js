@@ -1,6 +1,7 @@
 import './style.css';
 import { logo, navMenu } from './components/nav';
 import { form } from './components/form';
+import { specials, dishes } from './components/catalogue';
 
 
 const navbar = () => {
@@ -28,23 +29,19 @@ const homePageLoad = (content) => {
 };
 
 const clearPage = (content) => {
-  const bannerDiv = document.querySelector('.banner-div');
-  document.body.classList.remove('home-bg');
-  document.body.classList.add('main-bg');
-  content.removeChild(bannerDiv);
-};
-
-const clearPage2 = (content) => {
   document.body.classList.remove('home-bg');
   document.body.classList.add('main-bg');
   content.innerHTML = '';
 };
 const menuPageLoad = (content) => {
   clearPage(content);
+  content.appendChild(navbar());
+  content.appendChild(specials());
+  content.appendChild(dishes());
 };
 
 const contactPageLoad = (content) => {
-  clearPage2(content);
+  clearPage(content);
   content.appendChild(navbar());
   content.appendChild(form());
 };

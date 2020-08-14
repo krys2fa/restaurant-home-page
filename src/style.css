@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 60px;
+}
+
+nav li {
+  color: #fb704f;
+  font-weight: 500;
+  font-size: 35px;
+  margin: 10px 20px;
+}
+
+form {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  border: 2px solid #000;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 10px 40px;
+}
+
+.banner-div {
+  font-size: 42px;
+  color: #f15631;
+  margin: 145px 40px;
+  font-weight: 800;
+}
+
+.home-bg {
+  background: url('./images/banner.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-bg {
+  background-color: #232323;
+}
+
+.btn {
+  background-color: #f15631;
+  width: 15%;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex-h {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.dish,
+.special-offer {
+  margin: 40px;
+  color: #fff;
+}
+
+.img-div {
+  margin: 20px;
+}
+
+.items-list {
+  margin: 20px;
+  margin-left: -60px;
+  justify-content: space-evenly;
+}
+
+#content {
+  height: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  nav li {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  #menu-list {
+    margin-left: -100px;
+  }
+
+  nav ul {
+    margin-right: 0;
+  }
+
+  .banner-div {
+    margin: 0 40px;
+    font-weight: 500;
+  }
+
+  .btn {
+    width: 35%;
+  }
+
+  .img-div {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .items-list {
+    margin: 0;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav li {
+    font-size: 25px;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .banner-div {
+    font-size: 55px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .banner-div {
+    font-size: 52px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+  .img-div {
+    justify-content: space-evenly;
+  }
+
+  .dish h3,
+  .dish p,
+  .special-offer h3,
+  .special-offer p {
+    margin: 20px 40px;
+  }
+
+  .banner-div {
+    font-size: 60px;
+  }
+
+  nav li {
+    font-size: 55px;
+  }
+
+  .dish,
+  .special-offer {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .img-div {
+    justify-content: space-evenly;
+  }
+
+  .dish h3,
+  .dish p,
+  .special-offer h3,
+  .special-offer p {
+    margin: 20px 40px;
+  }
+
+  .banner-div {
+    font-size: 100px;
+    font-weight: 800;
+    margin: 500px 100px;
+  }
+
+  nav li {
+    font-size: 100px;
+  }
+
+  .dish,
+  .special-offer {
+    font-size: 40px;
+  }
+
+  .logo {
+    height: 200px;
+    width: 200px;
+  }
+}

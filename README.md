@@ -15,10 +15,11 @@ Requirements can be seen from [The Odin Curriculum](https://www.theodinproject.c
 - Javascript
 - Html
 - CSS
+- Webpack
 
 ## Live Demo
 
-Click [here](https://rawcdn.githack.com/krys2fa/restaurant-home-page/87c99c723be78e7a59a0c382eee8a6707de138ea/dist/index.html) to visit a live version of the web app.
+Click [here](https://krys2fa.github.io/restaurant-home-page/) to visit a live version of the web app.
 
 ## Getting Started
 
@@ -32,8 +33,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 - Clone the repository.
 - Run `npm install` to install dependencies.
-- Run `npx webpack`.
-- Run Live Server from VS Code.
+- Run `npm start` to start the development server.
+- Your browser should open. Click on the `dist` folder to see the app.
 
 ## Author
 

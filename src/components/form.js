@@ -3,7 +3,8 @@ const inputField = (labelName, fieldType) => {
   input.setAttribute('name', labelName);
   input.setAttribute('type', fieldType);
   input.setAttribute('placeholder', labelName);
-
+  input.setAttribute('minLength', 3);
+  input.required = true;
   return input;
 };
 
@@ -12,6 +13,8 @@ const textArea = (labelName) => {
   areaInput.setAttribute('placeholder', labelName);
   areaInput.setAttribute('rows', 6);
   areaInput.setAttribute('cols', 50);
+  areaInput.setAttribute('minLength', 3);
+  areaInput.required = true;
   return areaInput;
 };
 

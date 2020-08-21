@@ -49,6 +49,15 @@ textarea {
   border: 2px solid #000;
 }
 
+textarea:invalid,
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, #fff, #fb704f);
+}
+
 .logo {
   height: 100px;
   width: 100px;
